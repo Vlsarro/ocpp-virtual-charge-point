@@ -70,6 +70,6 @@ export class TransactionManager {
     if (!transaction) {
       return 0;
     }
-    return (new Date().getTime() - transaction.startedAt.getTime()) / 100;
+    return (new Date().getTime() - transaction.startedAt.getTime()) / 10000;
   }
 }
